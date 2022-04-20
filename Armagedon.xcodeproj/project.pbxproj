@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		665F45312810004D00E7724F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45302810004D00E7724F /* AppDelegate.swift */; };
+		665F45352810004D00E7724F /* LoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45342810004D00E7724F /* LoadViewController.swift */; };
+		665F453A2810004E00E7724F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 665F45392810004E00E7724F /* Assets.xcassets */; };
+		665F453D2810004E00E7724F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665F453B2810004E00E7724F /* LaunchScreen.storyboard */; };
+		665F45452810009E00E7724F /* DetailsDataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45442810009E00E7724F /* DetailsDataTypes.swift */; };
+		665F4548281000BA00E7724F /* AsteroidSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F4547281000BA00E7724F /* AsteroidSize.swift */; };
+		665F454C2810011300E7724F /* AsteroidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F454B2810011300E7724F /* AsteroidViewController.swift */; };
+		665F454E2810011700E7724F /* TrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F454D2810011700E7724F /* TrashViewController.swift */; };
+		665F45502810011D00E7724F /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F454F2810011D00E7724F /* FilterViewController.swift */; };
+		665F45522810012100E7724F /* DetailedIAsteroidInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45512810012100E7724F /* DetailedIAsteroidInfoViewController.swift */; };
+		665F45552810013400E7724F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45542810013400E7724F /* NetworkManager.swift */; };
+		665F45572810013A00E7724F /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45562810013A00E7724F /* SettingsManager.swift */; };
+		665F455C2810016500E7724F /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F455B2810016500E7724F /* UserDefaultsKeys.swift */; };
+		665F455F2810017800E7724F /* DistanceFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F455E2810017800E7724F /* DistanceFormat.swift */; };
+		665F45622810018B00E7724F /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45612810018B00E7724F /* Date.swift */; };
+		665F45642810019000E7724F /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45632810019000E7724F /* UIView.swift */; };
+		665F45662810019600E7724F /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45652810019600E7724F /* UILabel.swift */; };
+		665F45682810019A00E7724F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45672810019A00E7724F /* String.swift */; };
+		665F456A2810019F00E7724F /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45692810019F00E7724F /* UserDefaults.swift */; };
+		665F456C281001A400E7724F /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F456B281001A400E7724F /* UITableView.swift */; };
+		665F456E281001AA00E7724F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F456D281001AA00E7724F /* UIViewController.swift */; };
+		665F4571281001C400E7724F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F4570281001C400E7724F /* Settings.swift */; };
+		665F45742810024300E7724F /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45732810024300E7724F /* Localization.swift */; };
+		665F45782810026000E7724F /* AsteroidTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45772810026000E7724F /* AsteroidTableViewCell.swift */; };
+		665F457A2810026500E7724F /* UnitOfMeasureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45792810026500E7724F /* UnitOfMeasureTableViewCell.swift */; };
+		665F457C2810026B00E7724F /* DangerStateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F457B2810026B00E7724F /* DangerStateTableViewCell.swift */; };
+		665F457E2810027100E7724F /* DetailedInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F457D2810027100E7724F /* DetailedInfoTableViewCell.swift */; };
+		665F45822810029000E7724F /* AsteroidData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45812810029000E7724F /* AsteroidData.swift */; };
+		665F45842810029600E7724F /* NearEarthObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45832810029600E7724F /* NearEarthObjects.swift */; };
+		665F45862810029C00E7724F /* CloseApproachData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45852810029C00E7724F /* CloseApproachData.swift */; };
+		665F4588281002A000E7724F /* DistanceToEarth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F4587281002A000E7724F /* DistanceToEarth.swift */; };
+		665F458A281002A500E7724F /* EstimatedDiameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F4589281002A500E7724F /* EstimatedDiameters.swift */; };
+		665F458C281002AA00E7724F /* Meters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F458B281002AA00E7724F /* Meters.swift */; };
+		665F458E281002B100E7724F /* RelativeVelocity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F458D281002B100E7724F /* RelativeVelocity.swift */; };
+		665F4591281002CC00E7724F /* SettingsButtonsStatements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F4590281002CC00E7724F /* SettingsButtonsStatements.swift */; };
+		665F4598281003E600E7724F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 665F459A281003E600E7724F /* Localizable.strings */; };
+		665F459D28100A6200E7724F /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F459C28100A6200E7724F /* Double.swift */; };
+		665F459F28103BF000E7724F /* OnDeleteAsteroidTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F459E28103BF000E7724F /* OnDeleteAsteroidTableViewCell.swift */; };
+		665F45A22810438500E7724F /* AlertsTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F45A12810438500E7724F /* AlertsTitle.swift */; };
+		66A433572810574C00D58ACE /* TrashManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A433562810574C00D58ACE /* TrashManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		665F452D2810004D00E7724F /* Armagedon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Armagedon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		665F45302810004D00E7724F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		665F45342810004D00E7724F /* LoadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadViewController.swift; sourceTree = "<group>"; };
+		665F45392810004E00E7724F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		665F453C2810004E00E7724F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		665F453E2810004E00E7724F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		665F45442810009E00E7724F /* DetailsDataTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsDataTypes.swift; sourceTree = "<group>"; };
+		665F4547281000BA00E7724F /* AsteroidSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsteroidSize.swift; sourceTree = "<group>"; };
+		665F454B2810011300E7724F /* AsteroidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsteroidViewController.swift; sourceTree = "<group>"; };
+		665F454D2810011700E7724F /* TrashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrashViewController.swift; sourceTree = "<group>"; };
+		665F454F2810011D00E7724F /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		665F45512810012100E7724F /* DetailedIAsteroidInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedIAsteroidInfoViewController.swift; sourceTree = "<group>"; };
+		665F45542810013400E7724F /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		665F45562810013A00E7724F /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		665F455B2810016500E7724F /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		665F455E2810017800E7724F /* DistanceFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceFormat.swift; sourceTree = "<group>"; };
+		665F45612810018B00E7724F /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		665F45632810019000E7724F /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		665F45652810019600E7724F /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		665F45672810019A00E7724F /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		665F45692810019F00E7724F /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		665F456B281001A400E7724F /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		665F456D281001AA00E7724F /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		665F4570281001C400E7724F /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		665F45732810024300E7724F /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		665F45772810026000E7724F /* AsteroidTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsteroidTableViewCell.swift; sourceTree = "<group>"; };
+		665F45792810026500E7724F /* UnitOfMeasureTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitOfMeasureTableViewCell.swift; sourceTree = "<group>"; };
+		665F457B2810026B00E7724F /* DangerStateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DangerStateTableViewCell.swift; sourceTree = "<group>"; };
+		665F457D2810027100E7724F /* DetailedInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailedInfoTableViewCell.swift; sourceTree = "<group>"; };
+		665F45812810029000E7724F /* AsteroidData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsteroidData.swift; sourceTree = "<group>"; };
+		665F45832810029600E7724F /* NearEarthObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearEarthObjects.swift; sourceTree = "<group>"; };
+		665F45852810029C00E7724F /* CloseApproachData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloseApproachData.swift; sourceTree = "<group>"; };
+		665F4587281002A000E7724F /* DistanceToEarth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DistanceToEarth.swift; sourceTree = "<group>"; };
+		665F4589281002A500E7724F /* EstimatedDiameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstimatedDiameters.swift; sourceTree = "<group>"; };
+		665F458B281002AA00E7724F /* Meters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meters.swift; sourceTree = "<group>"; };
+		665F458D281002B100E7724F /* RelativeVelocity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelativeVelocity.swift; sourceTree = "<group>"; };
+		665F4590281002CC00E7724F /* SettingsButtonsStatements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsButtonsStatements.swift; sourceTree = "<group>"; };
+		665F45922810036B00E7724F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		665F4599281003E600E7724F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		665F459B281003F200E7724F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		665F459C28100A6200E7724F /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		665F459E28103BF000E7724F /* OnDeleteAsteroidTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDeleteAsteroidTableViewCell.swift; sourceTree = "<group>"; };
+		665F45A12810438500E7724F /* AlertsTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsTitle.swift; sourceTree = "<group>"; };
+		66A433562810574C00D58ACE /* TrashManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		665F452A2810004D00E7724F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		665F45242810004D00E7724F = {
+			isa = PBXGroup;
+			children = (
+				665F452F2810004D00E7724F /* Armagedon */,
+				665F452E2810004D00E7724F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		665F452E2810004D00E7724F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				665F452D2810004D00E7724F /* Armagedon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		665F452F2810004D00E7724F /* Armagedon */ = {
+			isa = PBXGroup;
+			children = (
+				665F45A02810437100E7724F /* AlertsTitles */,
+				665F4593281003A700E7724F /* Localizable */,
+				665F457F2810027A00E7724F /* Models */,
+				665F45752810024D00E7724F /* CustomElements */,
+				665F45722810023900E7724F /* TabBarTitles */,
+				665F456F281001B500E7724F /* Settings */,
+				665F45602810018100E7724F /* Extensions */,
+				665F455D2810016D00E7724F /* DistanceFormat */,
+				665F455A2810015900E7724F /* UserDefaultsKeys */,
+				665F45532810012A00E7724F /* Managers */,
+				665F454A2810010400E7724F /* Controllers */,
+				665F4546281000A100E7724F /* DetailsDataTypes */,
+				665F4549281000C100E7724F /* ImageSize */,
+				665F45302810004D00E7724F /* AppDelegate.swift */,
+				665F45392810004E00E7724F /* Assets.xcassets */,
+				665F453B2810004E00E7724F /* LaunchScreen.storyboard */,
+				665F453E2810004E00E7724F /* Info.plist */,
+			);
+			path = Armagedon;
+			sourceTree = "<group>";
+		};
+		665F4546281000A100E7724F /* DetailsDataTypes */ = {
+			isa = PBXGroup;
+			children = (
+				665F45442810009E00E7724F /* DetailsDataTypes.swift */,
+			);
+			path = DetailsDataTypes;
+			sourceTree = "<group>";
+		};
+		665F4549281000C100E7724F /* ImageSize */ = {
+			isa = PBXGroup;
+			children = (
+				665F4547281000BA00E7724F /* AsteroidSize.swift */,
+			);
+			path = ImageSize;
+			sourceTree = "<group>";
+		};
+		665F454A2810010400E7724F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				665F45342810004D00E7724F /* LoadViewController.swift */,
+				665F454B2810011300E7724F /* AsteroidViewController.swift */,
+				665F454F2810011D00E7724F /* FilterViewController.swift */,
+				665F45512810012100E7724F /* DetailedIAsteroidInfoViewController.swift */,
+				665F454D2810011700E7724F /* TrashViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		665F45532810012A00E7724F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				665F45562810013A00E7724F /* SettingsManager.swift */,
+				665F45542810013400E7724F /* NetworkManager.swift */,
+				66A433562810574C00D58ACE /* TrashManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		665F455A2810015900E7724F /* UserDefaultsKeys */ = {
+			isa = PBXGroup;
+			children = (
+				665F455B2810016500E7724F /* UserDefaultsKeys.swift */,
+			);
+			path = UserDefaultsKeys;
+			sourceTree = "<group>";
+		};
+		665F455D2810016D00E7724F /* DistanceFormat */ = {
+			isa = PBXGroup;
+			children = (
+				665F455E2810017800E7724F /* DistanceFormat.swift */,
+			);
+			path = DistanceFormat;
+			sourceTree = "<group>";
+		};
+		665F45602810018100E7724F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				665F45612810018B00E7724F /* Date.swift */,
+				665F45632810019000E7724F /* UIView.swift */,
+				665F45652810019600E7724F /* UILabel.swift */,
+				665F45672810019A00E7724F /* String.swift */,
+				665F456B281001A400E7724F /* UITableView.swift */,
+				665F45692810019F00E7724F /* UserDefaults.swift */,
+				665F456D281001AA00E7724F /* UIViewController.swift */,
+				665F459C28100A6200E7724F /* Double.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		665F456F281001B500E7724F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				665F4570281001C400E7724F /* Settings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		665F45722810023900E7724F /* TabBarTitles */ = {
+			isa = PBXGroup;
+			children = (
+				665F45732810024300E7724F /* Localization.swift */,
+			);
+			path = TabBarTitles;
+			sourceTree = "<group>";
+		};
+		665F45752810024D00E7724F /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				665F45762810025600E7724F /* CustomTableViewCells */,
+			);
+			path = CustomElements;
+			sourceTree = "<group>";
+		};
+		665F45762810025600E7724F /* CustomTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				665F45772810026000E7724F /* AsteroidTableViewCell.swift */,
+				665F45792810026500E7724F /* UnitOfMeasureTableViewCell.swift */,
+				665F457B2810026B00E7724F /* DangerStateTableViewCell.swift */,
+				665F457D2810027100E7724F /* DetailedInfoTableViewCell.swift */,
+				665F459E28103BF000E7724F /* OnDeleteAsteroidTableViewCell.swift */,
+			);
+			path = CustomTableViewCells;
+			sourceTree = "<group>";
+		};
+		665F457F2810027A00E7724F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				665F45802810028000E7724F /* JSONModels */,
+				665F458F281002B500E7724F /* SettingsModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		665F45802810028000E7724F /* JSONModels */ = {
+			isa = PBXGroup;
+			children = (
+				665F45812810029000E7724F /* AsteroidData.swift */,
+				665F45832810029600E7724F /* NearEarthObjects.swift */,
+				665F45852810029C00E7724F /* CloseApproachData.swift */,
+				665F4587281002A000E7724F /* DistanceToEarth.swift */,
+				665F4589281002A500E7724F /* EstimatedDiameters.swift */,
+				665F458D281002B100E7724F /* RelativeVelocity.swift */,
+				665F458B281002AA00E7724F /* Meters.swift */,
+			);
+			path = JSONModels;
+			sourceTree = "<group>";
+		};
+		665F458F281002B500E7724F /* SettingsModels */ = {
+			isa = PBXGroup;
+			children = (
+				665F4590281002CC00E7724F /* SettingsButtonsStatements.swift */,
+			);
+			path = SettingsModels;
+			sourceTree = "<group>";
+		};
+		665F4593281003A700E7724F /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				665F459A281003E600E7724F /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		665F45A02810437100E7724F /* AlertsTitles */ = {
+			isa = PBXGroup;
+			children = (
+				665F45A12810438500E7724F /* AlertsTitle.swift */,
+			);
+			path = AlertsTitles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		665F452C2810004D00E7724F /* Armagedon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 665F45412810004E00E7724F /* Build configuration list for PBXNativeTarget "Armagedon" */;
+			buildPhases = (
+				665F45292810004D00E7724F /* Sources */,
+				665F452A2810004D00E7724F /* Frameworks */,
+				665F452B2810004D00E7724F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Armagedon;
+			productName = Armagedon;
+			productReference = 665F452D2810004D00E7724F /* Armagedon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		665F45252810004D00E7724F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					665F452C2810004D00E7724F = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 665F45282810004D00E7724F /* Build configuration list for PBXProject "Armagedon" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 665F45242810004D00E7724F;
+			productRefGroup = 665F452E2810004D00E7724F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				665F452C2810004D00E7724F /* Armagedon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		665F452B2810004D00E7724F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				665F453D2810004E00E7724F /* LaunchScreen.storyboard in Resources */,
+				665F4598281003E600E7724F /* Localizable.strings in Resources */,
+				665F453A2810004E00E7724F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		665F45292810004D00E7724F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				665F459D28100A6200E7724F /* Double.swift in Sources */,
+				665F45862810029C00E7724F /* CloseApproachData.swift in Sources */,
+				665F45552810013400E7724F /* NetworkManager.swift in Sources */,
+				665F45502810011D00E7724F /* FilterViewController.swift in Sources */,
+				665F45822810029000E7724F /* AsteroidData.swift in Sources */,
+				665F45742810024300E7724F /* Localization.swift in Sources */,
+				665F458A281002A500E7724F /* EstimatedDiameters.swift in Sources */,
+				665F45452810009E00E7724F /* DetailsDataTypes.swift in Sources */,
+				665F456E281001AA00E7724F /* UIViewController.swift in Sources */,
+				665F45A22810438500E7724F /* AlertsTitle.swift in Sources */,
+				665F45352810004D00E7724F /* LoadViewController.swift in Sources */,
+				665F457C2810026B00E7724F /* DangerStateTableViewCell.swift in Sources */,
+				665F45312810004D00E7724F /* AppDelegate.swift in Sources */,
+				665F45842810029600E7724F /* NearEarthObjects.swift in Sources */,
+				665F456C281001A400E7724F /* UITableView.swift in Sources */,
+				665F457E2810027100E7724F /* DetailedInfoTableViewCell.swift in Sources */,
+				665F456A2810019F00E7724F /* UserDefaults.swift in Sources */,
+				665F457A2810026500E7724F /* UnitOfMeasureTableViewCell.swift in Sources */,
+				665F455C2810016500E7724F /* UserDefaultsKeys.swift in Sources */,
+				665F454E2810011700E7724F /* TrashViewController.swift in Sources */,
+				665F45572810013A00E7724F /* SettingsManager.swift in Sources */,
+				665F4548281000BA00E7724F /* AsteroidSize.swift in Sources */,
+				66A433572810574C00D58ACE /* TrashManager.swift in Sources */,
+				665F454C2810011300E7724F /* AsteroidViewController.swift in Sources */,
+				665F45662810019600E7724F /* UILabel.swift in Sources */,
+				665F459F28103BF000E7724F /* OnDeleteAsteroidTableViewCell.swift in Sources */,
+				665F4571281001C400E7724F /* Settings.swift in Sources */,
+				665F4591281002CC00E7724F /* SettingsButtonsStatements.swift in Sources */,
+				665F458C281002AA00E7724F /* Meters.swift in Sources */,
+				665F45782810026000E7724F /* AsteroidTableViewCell.swift in Sources */,
+				665F45642810019000E7724F /* UIView.swift in Sources */,
+				665F45522810012100E7724F /* DetailedIAsteroidInfoViewController.swift in Sources */,
+				665F45622810018B00E7724F /* Date.swift in Sources */,
+				665F458E281002B100E7724F /* RelativeVelocity.swift in Sources */,
+				665F45682810019A00E7724F /* String.swift in Sources */,
+				665F455F2810017800E7724F /* DistanceFormat.swift in Sources */,
+				665F4588281002A000E7724F /* DistanceToEarth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		665F453B2810004E00E7724F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				665F453C2810004E00E7724F /* Base */,
+				665F45922810036B00E7724F /* ru */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		665F459A281003E600E7724F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				665F4599281003E600E7724F /* en */,
+				665F459B281003F200E7724F /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		665F453F2810004E00E7724F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		665F45402810004E00E7724F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		665F45422810004E00E7724F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58283VP36N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Armagedon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = danilSabitov.Armagedon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		665F45432810004E00E7724F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58283VP36N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Armagedon/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = danilSabitov.Armagedon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		665F45282810004D00E7724F /* Build configuration list for PBXProject "Armagedon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				665F453F2810004E00E7724F /* Debug */,
+				665F45402810004E00E7724F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		665F45412810004E00E7724F /* Build configuration list for PBXNativeTarget "Armagedon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				665F45422810004E00E7724F /* Debug */,
+				665F45432810004E00E7724F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 665F45252810004D00E7724F /* Project object */;
+}
