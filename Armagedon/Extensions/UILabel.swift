@@ -8,5 +8,6 @@ extension UILabel {
         let attribute = NSMutableAttributedString(string: fullText)
         attribute.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red , range: range)
         self.attributedText = attribute
+        print()
     }
 }
