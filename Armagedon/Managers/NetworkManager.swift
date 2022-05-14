@@ -25,6 +25,7 @@ class NetworkManager {
                     
                 } catch {
                     print(error.localizedDescription)
+                    print()
                 }
             }
         }
